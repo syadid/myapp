@@ -1,2 +1,46 @@
 @import "../../bower_components/bootstrap/less/bootstrap";
 @import "../../bower_components/bootstrap/less/theme";
+@import "../../bower_components/less-elements/elements";
+@import "../../bower_components/fontawesome/less/font-awesome";
+@import "variables";
+
+.mybox{
+height: @box-height;
+border: @box-size;  
+}
+
+div.box1 {
+  .mybox;
+  background : @corporate-color;
+  &:hover{
+    background : lighten(@corporate-color,10%);
+  }
+}
+
+div.box2 {
+  .mybox;
+  .border-radius(10px,10px,50px,10px);
+  .gradient(#111,@mycolor,lighten(@mycolor,30%));
+  &:hover{
+    background : darken(@corporate-color,5%);
+  }
+}
+
+
+div.box3 {
+  .mybox;
+  background : lighten(@corporate-color,50%);
+  .rounded(30px);
+  &:hover{
+    background : darken(@corporate-color,10%);
+  }
+}
+
+.colorless{
+  color: @mycolor;
+}
+
+.fa-border-mycolor{
+border-color:@mycolor;
+}
+
