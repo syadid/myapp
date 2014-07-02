@@ -366,7 +366,7 @@ Email Address: <input type="Email" value="">
 
 	<div class="row">
 		<div class="col-md-4">
-			<button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Launch Modal</button>
+			<button class="btn btn-info btn-lg form-control" data-toggle="modal" data-target="#myModal">Launch Modal</button>
 			<div class="modal fade" id="myModal" tabindex="-1">
 				<div class="modal-dialog">
 					<div class="modal-content">
@@ -384,7 +384,7 @@ Email Address: <input type="Email" value="">
 			</div>
 		</div>
 		<div class="col-md-4">
-			<button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal2">Launch Modal w/ Table</button>
+			<button class="btn btn-warning btn-lg form-control" data-toggle="modal" data-target="#myModal2">Launch Modal w/ Table</button>
 			<div class="modal fade" id="myModal2" tabindex="-1">
 				<div class="modal-dialog">
 					<div class="modal-content">
@@ -413,7 +413,7 @@ Email Address: <input type="Email" value="">
 			</div>
 		</div>
 		<div class="col-md-4">
-			<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal3">Launch Modal w/ Form</button>
+			<button class="btn btn-success btn-lg form-control" data-toggle="modal" data-target="#myModal3">Launch Modal w/ Form</button>
 			<div class="modal fade" id="myModal3" tabindex="-1">
 				<div class="modal-dialog">
 					<div class="modal-content">
@@ -441,10 +441,7 @@ Email Address: <input type="Email" value="">
 						</div></div>
 						<div class="form-group">
 						<div class="col-sm-offset-2 col-sm-10">
-						
 						</div></div>
-				
-				
 					</form>
 						</div>
 						<div class="modal-footer">
@@ -457,6 +454,59 @@ Email Address: <input type="Email" value="">
 		</div>
 	</div>
 
+
+	<div class="row">
+		<div class="col-md-6">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#a" data-toggle="tab">Item A</a></li>
+				<li><a href="#b" data-toggle="tab">Item B</a></li>
+				<li><a href="#c" data-toggle="tab">Item C</a></li>
+				<li><a href="#d" data-toggle="tab">Item D</a></li>
+			</ul>
+			
+			<div class="tab-content">
+				<div class="tab-pane active"  id="a">
+					<table class="table table-striped table-responsive table-bordered table-hover table-condensed">
+								<thead>
+							<tr>
+								<td>Bil</td><td>Nama</td><td>Rumah Sukan</td></tr></thead>
+						<tbody>
+							<tr><td>1</td><td>Syadid</td><td>Lekiu</td></tr>
+							<tr><td>2</td><td>Pidot</td><td>Jebat</td></tr>
+							<tr><td>3</td><td>Wan</td><td>Lekiu</td></tr>
+							<tr><td>4</td><td>Zahir</td><td>Tuah</td></tr>
+							<tr><td>5</td><td>Ben</td><td>Tuah</td></tr>
+							</tbody></table>
+				</div>
+				<div class="tab-pane" id="b">
+					<form class="form-horizontal">
+						<div class="form-group">
+						<label for="email" class="col-sm-2">E-mail Address</label>
+						<input type="email" id="email" class="col-sm-10" placeholder="Email.." />
+						</div>
+						
+						<div class="form-group">
+						<label class="col-sm-2">Kata Laluan</label>
+						<input type="password" placeholder="Kata Laluan.." class="col-sm-10" />
+						</div>
+						<br />
+						<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+						
+						<label><input type="checkbox" /> Ingatku dalam doamu</label>
+						
+						</div></div>
+						<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+						</div></div>
+						</form>
+					</div>
+					<div class="tab-pane" id="c">Pane C</div>
+					<div class="tab-pane" id="c">Pane D</div>
+			</div>
+		</div>
+		<div class="col-md-6"></div>
+	</div>
 </div>
 
 <script src="bower_components/jquery/dist/jquery.min.js" type="application/javascript"></script>
